@@ -1,0 +1,8 @@
+{
+  "token": "TOKEN DO SEU BOT",
+  "owners": ["SEU ID AQUI"],
+  "cargoStaff": "CARGO DE STAFF",
+  "categoriaTickets": "CATEGORIA DE TICKETS",
+  "canalLogs": "CANAL DE LOGS",
+  "corEmbed": "#5865F2"
+}
