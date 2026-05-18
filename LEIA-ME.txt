@@ -2,24 +2,35 @@
       SISTEMA DE SUPORTE PROFISSIONAL - Gxzinkk_
 =====================================================
 
-Obrigado por adquirir nosso sistema! Siga os passos
-abaixo para ligar o seu bot em menos de 5 minutos.
+Obrigado por adquirir nosso sistema! Siga os passos 
+abaixo para configurar e ligar o seu bot de forma 
+manual e segura.
 
-1. CONFIGURAÇÃO (config.json):
-   - Abra o arquivo 'config.json' com o Bloco de Notas ou VS Code.
-   - 'token': Coloque o token do seu bot (obtido no Discord Developer Portal).
-   - 'owners': Coloque o SEU ID entre aspas. Ex: ["123456789"].
-   - 'cargoStaff': ID do cargo que poderá ver os tickets e usar comandos de Staff.
-   - 'categoriaTickets': ID da categoria onde os canais de ticket serão criados.
+1. REQUISITOS:
+   - Ter o Node.js instalado (versão 16.x ou superior).
 
-2. LIGANDO O BOT:
-   - Clique duas vezes no arquivo 'INSTALAR.bat' para baixar as bibliotecas.
-   - Clique duas vezes no arquivo 'LIGAR.bat' para iniciar o bot.
+2. INSTALAÇÃO DAS DEPENDÊNCIAS:
+   - Abra o terminal (Prompt de Comando ou PowerShell) na pasta do bot.
+   - Digite o comando: npm install
+   - Aguarde a conclusão da instalação da biblioteca discord.js.
 
-3. COMANDOS PRINCIPAIS:
-   - /setup: Use para criar o seu painel personalizado (Título, Banner, Cor).
-   - /config-bot: Use para mudar o Nome e a Foto do bot direto pelo Discord.
-   - /ping: Verifica se a conexão do bot está rápida.
+3. CONFIGURAÇÃO (config.json):
+   - Abra o arquivo 'config.json' com um editor de texto.
+   - 'token': Insira o Token do seu bot (Discord Developer Portal).
+   - 'owners': Insira o seu ID entre aspas. Ex: ["123456789"].
+   - 'cargoStaff': ID do cargo que gerencia os tickets.
+   - 'categoriaTickets': ID da categoria onde os canais serão criados.
+   - 'canalLogs': ID do canal onde as ações serão registradas.
 
-⚠️ IMPORTANTE: No Developer Portal do Discord, ative as 3 CHAVES 
-de 'Privileged Gateway Intents' na aba "Bot" para os comandos funcionarem!
+4. LIGANDO O BOT:
+   - No terminal aberto na pasta do bot, digite: node index.js
+   - Se aparecer "Sistema Gxzinkk_ Online", o bot já está operando.
+
+5. COMANDOS PRINCIPAIS (Slash Commands /):
+   - /setup: Configura o painel de tickets (Título, Descrição, Banner).
+   - /config-bot: Altera Nome e Avatar do bot em tempo real.
+   - /add e /remove: Adiciona ou remove membros de um ticket aberto.
+
+⚠️ IMPORTANTE: No Developer Portal (aba Bot), ative as 3 chaves de 
+'Privileged Gateway Intents' para que os comandos funcionem corretamente!
+=====================================================
